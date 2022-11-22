@@ -1,0 +1,459 @@
+﻿* { 
+margin: 0;
+padding: 0;
+background-color: #FFEEFF;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+font-family: Century Gothic;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.header {
+display: flex;
+flex-flow: row nowrap;
+justify-content: flex-start;
+align-items: center;
+height: 200px;
+background-color: white;
+}
+
+.menu {
+flex-grow: 1;
+background-color: white;
+}
+
+.menu1 {
+flex-grow: 1;
+background-color: #FFEEFF;
+}
+
+.menu ul {
+display: flex;
+flex-flow: row nowrap;
+margin: 2px 0 0;
+padding: 0;
+font-size: 20px;
+line-height: 18px;
+list-style: none;
+background-color: white;
+}
+
+.menu1 ul {
+display: flex;
+flex-flow: row nowrap;
+margin: 2px 0 0;
+padding: 0;
+font-size: 20px;
+line-height: 18px;
+list-style: none;
+background-color: #FFEEFF;
+justify-content: center;
+}
+
+.menu li {
+margin-right: 30px;
+}
+
+.menu1 li {
+margin-right: 30px;
+}
+
+.menu li: last-child {
+margin-right: 0;
+}
+
+.menu1 li: last-child {
+margin-right: 0;
+}
+
+.menu a {
+padding: 8px 10px;
+color: #000;
+text-decoration: none;
+}
+
+.menu1 a {
+padding: 8px 10px;
+color: #000;
+text-decoration: none;
+}
+
+.logo {
+margin-right: 30px;
+background-color: white;
+}
+
+.logo a {
+background-color: white;
+}
+
+.menu a,
+.menu .active {
+display: block;
+padding: 8px 10px;
+letter-spacing: .27em;
+background-color: white;
+}
+
+.menu1 a,
+.menu1 .active {
+display: block;
+padding: 8px 10px;
+background-color: #FFEEFF;
+}
+
+.menu .active {
+color: #fff;
+border-radius: 8px;
+}
+
+.menu1 .active {
+color: #fff;
+border-radius: 8px;
+}
+
+.tel {
+margin-right: 10px;
+background-color: white;
+}
+
+.tel a {
+margin-right: 10px;
+background-color: white;
+}
+
+.korzina {
+margin-right: 25px;
+background-color: white;
+}
+
+.korzina a {
+margin-right: 25px;
+background-color: white;
+}
+
+.wrap {
+height: 600px;
+margin: 50px auto 0;
+position: relative;
+width: 1700px;
+}
+
+.wrap > input {
+display: none;
+top: -40px;
+}
+
+.slider {
+background-color: #333;
+height: inherit;
+overflow: hidden;
+position: relative;
+width: inherit;
+}
+
+.slides {
+height: inherit;
+opacity: 0;
+position: absolute;
+width: inherit;
+z-index: 0;
+}
+	
+.img1 { background-image: url(images/слайд1.jpg); }
+.img2 { background-image: url(images/слайд2.jpg); }
+.img3 { background-image: url(images/слайд3.jpg); }
+	
+.wrap .control {
+position: absolute;
+margin-left: -50px;
+left: 50%;
+}
+
+.wrap label {
+cursor: pointer;
+display: inline-block;
+height: 8px;
+margin: 10px;
+position: relative;
+width: 8px;
+border-radius: 20%;
+}
+
+.wrap label:after {
+border: 2px solid black;
+content: " ";
+display: block;
+height: 12px;
+left: -4px;
+position: absolute;
+top: -4px;
+width: 12px;
+border-radius: 20%;
+z-index: 100;
+}
+
+#point1:checked ~ .control label:nth-of-type(1),
+#point2:checked ~ .control label:nth-of-type(2),
+#point3:checked ~ .control label:nth-of-type(3) {
+background: black;
+}
+
+#point1:checked ~ .slider > .img1,
+#point2:checked ~ .slider > .img2,
+#point3:checked ~ .slider > .img3 {
+opacity: 1;
+z-index: 1;
+transform: none;
+-webkit-filter: none;
+}
+
+.slides{
+transform: rotate(55deg);
+-webkit-filter: hue-rotate(90deg);
+transition: 1s;
+}
+
+.naverh {
+display: block;
+position: fixed;
+bottom: 20px;
+right: 15px;
+}
+
+.title {
+position: center;
+width: 100%;
+height: 40px;
+margin-bottom: 50px;
+margin-top: 100px;
+justify-content: center;
+font-size: 30px;
+font-family: Century Gothic;
+text-transform: uppercase;
+color: black; 
+}
+
+.product-item {
+display: inline-block;
+width: 300px;
+text-align: center;
+margin: 5px auto;
+margin-right: 30px;
+background: white;
+font-family: Century Gothic;
+transition: .3s ease-in;
+margin-bottom: 30px;
+}
+
+.product-item:hover {
+border-bottom: 2px solid #DC143C;
+}
+
+.product-item img {
+display: block;
+width: 100%;
+}
+
+.product-list {
+background: white;
+padding: 15px 0;
+}
+
+.product-list h3 {
+font-size: 20px;
+font-weight: 400;
+background: white;
+margin: 0 0 10px 0;
+}
+
+.price {
+font-size: 20px;
+font-weight: bolder;
+background-color: white;
+color: #DC143C;
+display: block;
+margin-bottom: 14px;
+}
+	
+.button {
+text-decoration: none;
+display: inline-block;
+padding: 0 12px;
+background: #f08080;
+color: white;
+text-transform: uppercase;
+font-size: 16px;
+line-height: 28px;
+transition: .3s ease-in;
+}
+
+.product-item:hover .button {
+background: #DC143C;
+}
+
+.poloska {
+background-color: #d6a3d1;
+height: 3px;
+margin-top: 50px;
+}
+
+.footer {
+position: flex;
+left: 0; bottom: 0;
+background-color: #FFEEFF; 
+color: black;
+width: 100%;
+height: 140px;
+}
+
+.infofooter {
+color: black;
+background-color: #FFEEFF; 
+font-family: Century Gothic;
+font-size: 18px;
+text-transform: uppercase;
+margin-left: 10px;
+}
+
+.social {
+background-color: #FFEEFF;
+}
+
+.social a {
+background-color: #FFEEFF;
+}
+
+.titletovar {
+height: 40px;
+margin-bottom: 50px;
+margin-top: 100px;
+font-size: 30px;
+font-family: Century Gothic;
+text-transform: uppercase;
+text-align: center;
+color: black; 
+}
+
+.titletovar1 {
+height: 40px;
+margin-bottom: 50px;
+margin-top: 100px;
+margin-left: 100px;
+font-size: 30px;
+font-family: Century Gothic;
+text-transform: uppercase;
+text-align: left;
+color: black; 
+}
+
+.alltovar {
+margin-left: 100px;
+}
+
+.picture {
+margin-left: 70px;
+}
+
+.text {
+font-family: Century Gothic;
+font-size: 20px;
+margin-left: 900px;
+margin-top: -550px;
+margin-right: 30px;
+}
+
+.text1 {
+font-family: Century Gothic;
+font-size: 20px;
+margin-left: 900px;
+margin-top: 160px;
+margin-bottom: 50px;
+}
+
+.text2 {
+font-family: Century Gothic;
+font-size: 20px;
+margin-left: 700px;
+margin-right: 80px;
+margin-top: -600px;
+}
+
+.text3 {
+font-family: Century Gothic;
+font-size: 20px;
+margin-left: 700px;
+margin-right: 95px;
+margin-top: -650px;
+margin-bottom: 350px;
+}
+
+.container {
+padding: 16px;
+margin-left: 700px;
+margin-top: 50px;
+}
+
+input[type=text], input[type=password] {
+width: 500px;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: white;
+font-family: Century Gothic;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #f7f7f7;
+outline: none;
+}
+
+.registerbtn {
+font-family: Century Gothic;
+background-color: #d6a3d1;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 500px;
+opacity: 0.9;
+text-transform: uppercase;
+}
+
+.registerbtn:hover {
+opacity: 1;
+}
+
+h1 {
+font-family: Century Gothic;
+}
+
+b {
+font-family: Century Gothic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+Учебник
+http://old.code.mu/books/php/
+http://code.mu/ru/php/book/prime/

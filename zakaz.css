@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Century Gothic;
+}
+
+/*zakaz*/
+
+.container-area {
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.container-area-inner {
+	margin-top: 50px;
+}
+
+.personal_area {
+	width: 500px;
+	margin: auto;
+	height: 750px;
+	border-radius: 60px;
+	box-shadow: 0 0 10px black;
+	background-color: #FFEEFF;
+}
+
+.block_vhod label {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	font-size: 25px;
+}
+
+.pole {
+	margin-top: 30px;
+}
+
+.pole input[type="text"] {
+	transition: 0.3s ease-in-out;
+	font-size: 14px;
+}
+
+.pole input[type="text"]:focus {
+	border-radius: 0px;
+}
+
+/*способ оплаты*/
+.block_sposob1 {
+	display: block;
+}
+
+.block_sposob1 .sposob {
+	display: flex;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.inp {
+	margin: 30px 0px 0px 11%;
+	border: none;
+	outline: none;
+	width: 390px;
+	padding: 15px;
+	border-radius: 15px;
+	background-color:white;
+}
+
+.inp2 {
+	margin: 0px 0px 0px 11%;
+	border: none;
+	outline: none;
+	width: 390px;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+::placeholder {
+	font-weight: bold;
+	color: black;
+	opacity: 0.8;
+}
+
+.welcome {
+	margin: 15% 0% 0% 34% ;
+	padding: 12px 30px;
+	border-radius: 40px;
+	border: none;
+	background-color: #d6a3d1;
+	color: #fff;
+	font-size: 15px;
+	transition: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.personal_area {
+		width: 600px;
+		margin: auto;
+		height: 1060px;
+		border-radius: 60px;
+		box-shadow: 0 0 10px black;
+	}
+
+	.block_vhod label {
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+		font-size: 45px;
+	}
+
+	.inp {
+		margin: 40px 0px 0px 11%;
+		border: none;
+		outline: none;
+		width: 470px;
+		padding: 25px;
+		border-radius: 15px;
+		background-color: #e8e8e8;
+	}
+
+	.inp2 {
+		margin: 0px 0px 0px 11%;
+		border: none;
+		outline: none;
+		width: 470px;
+		padding: 25px;
+		border-radius: 15px;
+		background-color: #e8e8e8;
+	}
+
+	.lab-zak b {
+		font-size: 25px;
+	}
+
+	.welcome {
+		margin: 15% 0% 0% 23% ;
+		padding: 20px 50px;
+		border-radius: 40px;
+		border: none;
+		border: 2px solid #6a6c85;
+		background-color: #6a6c85;
+		color: #fff;
+		font-size: 35px;
+		transition: 0.3s ease-in-out;
+		cursor: pointer;
+	}
+
+	.welcome:hover {
+		border-radius: 0px;
+	}
+
+	::placeholder {
+		font-weight: lighter;
+		color: black;
+		opacity: 0.8;	
+	}
+
+	/*payment*/
+	.block_sposob1 .sposob {
+		display: flex;
+		margin-top: 30px;
+		margin-left: 70px;
+		margin-bottom: 15px;
+		font-size: 25px;
+	}
+
+	.form_radio_btn label {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 15px;
+		width: 210px;
+		padding: 5px 15px;
+		font-size: 25px;
+		opacity: 0.9;
+		margin-left: 10px;
+		line-height: 30px;
+		border: 0px solid #999;
+		border-radius: 6px;
+		user-select: none;
+		background-color: #e8e8e8;
+	}
+}
