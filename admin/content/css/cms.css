@@ -1,0 +1,173 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body, html {
+width: 100%;
+font-family: Century Gothic;;
+}
+
+/*верхний блок шапки*/
+.container-header-top {
+position: fixed;
+z-index: 10;
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 4.5vw;
+background-color: #FFEEFF;
+adding: 0.6vw 0px 0px 0.8vw;
+}
+
+.header-logo a img{
+position: absolute;
+width: 2.7vw;
+}
+
+.header-title {
+margin-left: 1vw;
+padding-top: 0.5vw;
+font-size: 1.8vw;
+color: black;
+}
+
+.header-log {
+margin-top: 1.5vw;
+margin-right: 2vw;
+}
+
+.header-log p {
+color: #fff;
+font-size: 0.9vw;
+color: black;
+}
+
+.header-log a {
+text-decoration: none;
+color: black;
+font-size: 0.9vw;
+}
+
+/*левый блок шапки*/
+.container-header-left {
+position: fixed;
+z-index: 1;
+width: 13vw;
+height: 100%;
+background-color: #FFEEFF;
+border-top: 0.1vw solid white;
+padding: 0px 0px 0px 0.2vw;
+color: black;
+}
+
+
+/*навигация*/
+.nav {
+position: absolute;
+left: 0;
+top: 4.3vw;
+}
+
+.nav .knop {
+display: none;
+}
+
+.container-header-left nav ul {
+border-bottom: 0.1vw solid black;
+width: 13vw;
+}
+
+.container-header-left nav ul li {
+list-style: none;
+padding: 0.7vw 0px 0.7vw 0.7vw;
+transition: 0.3s ease-in-out;
+}
+
+.container-header-left nav ul .a_nav {
+text-decoration: none;
+color: black;
+font-size: 0.9vw; 
+}
+
+.container-header-left nav ul li:hover {
+background-color: #d6a3d1;
+}
+
+
+/*медиа-запрос*/
+@media (max-width: 768px) {
+.container-header-top {
+position: fixed;
+z-index: 10;
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 7vw;
+background-color: #6a6c85;
+padding: 0.6vw 0px 0px 0.8vw;
+}
+
+.header-logo a img{
+position: absolute;
+width: 4.8vw;
+}
+
+.header-title {
+margin-left: 6vw;
+padding-top: 0.5vw;
+font-size: 3.5vw;
+color: #fff;
+}
+
+.header-log {
+margin-top: 1.0vw;
+margin-right: 2vw;
+}
+
+.header-log p {
+color: #fff;
+font-size: 2.4vw;
+}
+
+.header-log a {
+text-decoration: none;
+color: #fff;
+font-size: 2.4vw;
+}
+
+.container-header-left {
+position: fixed;
+z-index: 1;
+width: 11vw;
+height: 100%;
+background-color: #6a6c85;
+border-top: 0.1vw solid white;
+padding: 0px 0px 0px 0.2vw;
+}
+
+.nav {
+position: absolute;
+left: 0;
+top: 11vw;
+}
+
+.nav .knop {
+display: block;
+}
+
+.nav img {
+width: 6vw;
+margin: 1.5vw 0vw 3vw 2.3vw;
+}
+
+.container-header-left nav ul {
+border-bottom: 0vw solid black;
+width: 13vw;
+}
+
+.container-header-left nav ul a {
+display: none;
+}
+}

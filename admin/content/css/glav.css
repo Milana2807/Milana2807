@@ -1,0 +1,185 @@
+* {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+body {
+margin: 0 auto;
+font-family: 'Montserrat', sans-serif;
+}
+
+.str{
+margin-left: 10vw;
+width: 90vw;
+margin-top: 7vw;
+}
+
+.nazv {
+font-size: 1.6vw;
+margin-left: 5vw;
+}
+
+.block_blocki {
+width: 95vw;
+}
+
+.blocki {
+position: relative;
+display: inline-block;
+margin-top: 2vw;
+margin-left: 5vw;
+width: 22vw;
+height: 14vw;
+background-color: white;
+box-shadow: 0 0 0.2vw silver;
+}
+
+.blocki > img {
+width: 7vw;
+margin-left: 2.5vw;
+margin-top: 2vw;
+}
+
+.blocki h2 {
+margin-left: 74%;
+margin-top: -7vw;
+font-size: 5vw;
+color: #6a6c85;
+pointer-events: none;
+}
+
+.bl1 {
+background-color: #FFEEFF;
+width: 25vw;
+height: 3vw;
+color: black;
+font-size:1.2vw;
+}
+
+.bl1 > p {
+font-size: 1.1vw;
+margin-top: 0.8vw;
+margin-left: 1vw;
+}
+
+.str > table{
+margin-top: 2vw;
+margin-left: 5vw;
+width: 77vw;
+}
+
+caption{
+font-size: 1.2vw;
+padding: 0.5vw;
+}
+
+td, th{
+padding: 0.4vw;
+font-size: 0.9vw;
+border: 0.1vw solid black;
+}
+
+td a img {
+width: 1.5vw;
+height: 1.5vw;
+}
+
+@media (max-width: 768px) {
+.nazv {
+font-size: 4vw;
+margin-left: 5vw;
+}
+
+.blocki {
+position: relative;
+display: block;
+margin-top: 2vw;
+margin-left: 15vw;
+width: 60vw;
+height: 35vw;
+background-color: white;
+border: 2px solid #6a6c85;
+}
+
+.blocki > img {
+width: 19vw;
+margin-left: 4vw;
+margin-top: 4vw;
+}
+
+.blocki h2 {
+margin-left: 74%;
+margin-top: -19vw;
+font-size: 15vw;
+color: #6a6c85;
+pointer-events: none;
+}
+
+.bl1 {
+background-color: #6a6c85;
+width: 60vw;
+height: 8vw;
+color: #fff;
+font-size:1.2vw;
+}
+
+.bl1 > p {
+font-size: 5vw;
+margin-top: 0.8vw;
+margin-left: 1vw;
+}
+
+.str .table_zvonok {
+margin-bottom: 10vw;
+}
+
+.str .table_zvonok td {
+min-width: 10vw;
+padding: 0vw;
+font-size: 3.5vw;
+padding: 2.5vw 2.5vw;
+}
+
+.str .table_back_sv {
+margin-bottom: 10vw;
+}
+
+.str .table_back_sv td {
+width: 77vw;
+}
+
+caption {
+font-size: 5vw;
+}
+
+thead {
+position: absolute;
+}
+
+th {
+display: none;
+}
+
+.str .table_back_sv td {
+display: flex;
+min-width: 50vw;
+font-size: 3.5vw;
+text-align: justify;
+padding: 2.5vw 2.5vw;
+}
+
+.str .table_last  td {
+display: flex;
+min-width: 50vw;
+font-size: 3.5vw;
+text-align: justify;
+padding: 2.5vw 2.5vw;
+}
+
+.img-td img {
+display: flex;
+width: 5.5vw;
+height: 5.5vw;
+}
+}

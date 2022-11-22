@@ -1,0 +1,225 @@
+* {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+body {
+margin: 0 auto;
+font-family:  Century Gothic;
+}
+
+.str {
+margin-left: 10vw;
+width: 90vw;
+margin-top: 7vw;
+}
+
+.nazv {
+font-size: 1.6vw;
+margin-left: 5vw;
+}
+
+form {
+margin-top: 1vw;
+margin-left: 4.8vw;
+width: 80vw;
+}
+
+a{
+text-decoration: none;
+}
+
+input, button {
+width: 9.5vw;
+padding: 0 1vw;
+margin-left: 0.5vw;
+margin-bottom: 0.5vw;
+margin-top: 1vw;
+background-color: #e8e8e8;
+line-height: 2vw;
+border-width: 0;
+border-radius: 1vw;
+font-family:  Century Gothic;
+outline: none;
+transition: 0.3s ease-in-out;
+}
+
+input:focus {
+border-radius: 0px;
+}
+
+.form-dob input {
+font-size: 0.8vw;
+width: 20vw;
+padding: 0.5vw;
+text-indent: 0.5vw;
+}
+
+.form-dob button {
+width: 11vw;
+padding: 0.3vw;
+border-radius: 3vw;
+}
+
+.form-dob button:hover {
+border-radius: 0vw;
+}
+
+.input_dob, .dob {
+width: 9.5vw;
+padding: 0 1vw;
+margin-left: 26.5vw;
+margin-bottom: 0.5vw;
+margin-top: 1vw;
+background-color: #CFCFCF;
+line-height: 2vw;
+border-width: 0;
+border-radius: 1vw;
+font-size: 0.9vw;
+font-family:  Century Gothic;
+outline: none;
+}
+
+.dob {
+margin-top: 1.5vw;
+background-color: #d6a3d1;
+color: #fff;
+margin-left: 35vw;
+font-size: 1vw;
+cursor: pointer;
+width: 9vw;
+transition: 0.3s ease-in-out;
+}
+
+button:hover {
+background-color: #d6a3d1;
+border-radius: 0vw;
+}
+
+button {
+margin-top: 1.5vw;
+background-color: #d6a3d1;
+color: #fff;
+font-size: 0.8vw;
+cursor: pointer;
+width: 9vw;
+transition: 0.3s ease-in-out;
+}
+
+.str > table{
+margin-top: 2vw;
+margin-left: 5vw;
+width: 77vw;
+}
+
+caption {
+font-size: 1.2vw;
+padding: 0.3vw;
+}
+
+/*Таблицы*/
+th, td {
+padding: 0.4vw;
+font-size: 0.9vw;
+border: 0.1vw solid black;
+}
+
+.img-td img {
+width: 1.5vw;
+height: 1.5vw;
+}
+
+.img-uslug img {
+width: 10vw;
+}
+
+/*Редактирование записей*/
+.upup {
+position: absolute;
+margin-top: 10vw;
+margin-left: 11vw;
+}
+
+.upup > input {
+display: flex;
+width: 25vw;
+}
+
+.upup > button {
+justify-content:  center;
+display: flex;
+width: 10vw;
+}
+
+@media (max-width: 768px) {
+   .nazv {
+font-size: 4vw;
+margin-left: 5vw;
+}
+
+th {
+display: none;
+}
+
+td {
+display: flex;
+min-width: 50vw;
+font-size: 3.5vw;
+text-align: justify;
+padding: 2.5vw 2.5vw;
+}
+
+.img-uslug img {
+width: 75vw;
+}
+
+.img-td img {
+display: flex;
+width: 5.5vw;
+height: 5.5vw;
+}
+
+/*Форма добавления товара*/
+.form-dob input {
+font-size: 3vw;
+width: 30vw;
+padding: 1vw;
+}
+
+.form-dob button {
+width: 30vw;
+padding: 1.5vw;
+border-radius: 3vw;
+font-size: 3vw;
+}
+
+/*Редактирование записей*/
+.upup {
+position: absolute;
+margin-top: 10vw;
+margin-left: -3vw;
+}
+
+.upup > input {
+display: flex;
+width: 50vw;
+padding: 2.5vw;
+font-size: 3vw;
+margin-top: 3vw;
+}
+
+.upup > button {
+display: flex;
+width: 40vw;
+padding: 2.5vw;
+font-size: 3vw;
+margin-top: 3vw;
+border-radius: 5vw;
+margin-left: 34vw;
+}
+
+.upup > button:hover {
+border-radius: 0vw;
+}
+}
